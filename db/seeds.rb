@@ -8,3 +8,4 @@
 AdminUser.create!(email: 'adm@vlt.com', password: '////????', password_confirmation: '////????') unless AdminUser.exists?
 User.find_or_create_by(first_name: 'Shubham', last_name: 'Gupta')
 User.find_or_create_by(first_name: 'Sawan', last_name: 'Gupta')
+User.find_or_create_by(first_name: 'Anil', last_name: 'Gupta')

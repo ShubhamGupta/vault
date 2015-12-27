@@ -1,4 +1,5 @@
 ActiveAdmin.register Account do
+  actions :all, except: [:destroy]
 
   permit_params :name, :user_name, :password_digest, :link, :email, :user_id
 
@@ -18,7 +19,6 @@ ActiveAdmin.register Account do
     id_column
     column :name
     column :user_name
-    column :password_digest
     column :link
     column :email
     column :user
